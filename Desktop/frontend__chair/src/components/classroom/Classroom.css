@@ -1,0 +1,140 @@
+/* css-стили для Classroom.jsx */
+@import url(../../colors.css);
+
+.Classroom{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Registration__header{
+    height: 193px;
+    width: 100%;
+    background: url(src/img/header__background__black.svg) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.Registration__header > span{
+    position: absolute;
+    bottom: 0;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 15px 20px;
+    color: #3B4452;
+    text-align: center;
+}
+
+
+
+
+.Classroom__main{
+    --add-margin:2.25em 0em;
+
+    /* height: calc(100% - (var(--add-margin) * 2)) ;
+    width: calc(100% - (var(--add-margin) * 2)); */
+    margin: var(--add-margin);
+    border-radius: 15px;
+    padding: .5em;
+
+    background-color: var(--gray-color);
+}
+
+.Classroom__teacher__card {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    color: var(--bg-primary-color);
+    width: fit-content;
+    padding: 0.5em;
+    margin: 0.5em;
+    border-radius: 0.5em;
+}
+
+.Classroom__teacher__name{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Classroom__teacher__name > span{
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 27px;
+}
+
+.Classroom__teacher__name > span:last-child{
+    font-weight: bold;
+}
+
+.missing__container{
+    height: fit-content;
+    border-radius: 7px;
+    background-color:#FAFAFA;
+    margin: 30px 20px;
+    padding: 5px 20px;
+    color: black;
+}
+
+.missing__container p{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #3B4452;
+}
+
+.missing__container li{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #026537;
+}
+
+.footer{
+    height: fit-content;
+    background-color: #3B4452;
+    text-align: center;
+    margin: 2.25em 0em;
+    font-size: 24px;
+    font-style: normal;
+    border-radius: 15px;
+    padding: 30px 0px;
+}
+
+.footer img{
+    border-radius: 50%;
+    background: white;
+    transition: all 0.5s ease;
+}
+
+.footer img:hover{
+    border-radius: 50%;
+    transform: rotate(360deg);
+}
+
+select{
+    outline: none;
+    font-family: inherit;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+@media (max-width:320px){
+    .Registration__header > span{
+        font-size: 32px;
+    }
+    .footer{
+        font-size: 18px;
+    }
+}

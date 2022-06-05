@@ -1,0 +1,43 @@
+@import url(../../colors.css);
+
+.Authorization{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.Authorization__container{  
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: center;
+}
+
+.Authorization__container > *{
+    margin: .5em;
+}
+
+.Authorization__form{
+    border: 1px solid #434c58;
+}
+
+.Authorization__title{
+    text-align: center;
+}
+
+@media screen and (max-width: 740px) {
+    .Authorization__container{
+        flex-wrap: wrap-reverse;
+    }
+}
+
+@media (max-width:512px){
+    .Authorization{
+        height: auto;
+    }
+    .Authorization__title {
+    text-align: center;
+    font-size: 13px;
+    }
+}

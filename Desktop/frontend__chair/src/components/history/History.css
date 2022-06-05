@@ -1,0 +1,70 @@
+
+
+
+
+.history__header{
+    height: 193px;
+    width: 100%;
+    background: url(./src/headerbackground.png) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.history__header > span{
+    position: absolute;
+    bottom: 0;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 15px 20px;
+    color: #3B4452;
+    text-align: center;
+}
+
+
+.window {
+    margin: 1em 1em 1em 1em;
+    max-width: 96%;
+    height: fit-content;
+    background-color: #ECECEC;
+    size: cover;
+
+    
+
+    
+
+}
+
+
+
+.teacher__card {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    color: var(--bg-primary-color);
+    width: fit-content;
+    padding: 0.5em;
+    margin: 0.5em;
+    border-radius: 0.5em;
+
+    margin-left: 10px;
+
+    flex-direction: row;
+
+
+
+}
+
+.name {
+    display: flex;
+    flex-direction: column
+}
+
+.teacher__card > span{
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 27px;
+}

@@ -1,0 +1,15 @@
+@import url(../../../../../../colors.css);
+
+.user-button-group{
+    background-color: var(--white-color);
+    border-radius: .75em;
+    color: var(--bg-secondary-color);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-button-group > *{
+    margin: .5em;
+}
